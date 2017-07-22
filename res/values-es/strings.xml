@@ -1,0 +1,69 @@
+<resources>
+    <string name="login">iniciar la sesión</string>
+    <string name="signup">registro</string>
+    <string name="mainGUI">bienvenida</string>
+    <string name="image">Descargar Una imagen</string>
+    <string name="donateblood">Donar sangre</string>
+    <string name="ContactDonor">Contacto Donante</string>
+    <string name="UserGuide">Guía del usuario</string>
+    <string name="action_settings">ajustes</string>
+    <string name="facebook_id">1537284776579250</string>
+    <string name="nearbyppl">La gente Cerca</string>
+    <string name="SignUpLogo">registro</string>
+    <string name="LoginLogo">iniciar la sesión</string>
+    <string-array name="blood_type">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="loginemail">E-mail</string>
+    <string name="loginpassword">Contraseña</string>
+    <string name="loginbutton">Conectarse</string>
+    <string name="createaccount">Haga clic aquí Para suscribirse</string>
+    <string name="SignUpname">nombre</string>
+    <string name="SignUpemail">E-mail</string>
+    <string name="SignUppassword">Contraseña</string>
+    <string name="SignUpage">edad</string>
+    <string name="SignUpcontact_no">su número de</string>
+    <string name="next_step">siguiente</string>
+    <string name="already_a_member_login">Ya es miembro? Conectarse</string>
+    <string name="topstartguilogo">TopStartGUILogo</string>
+    <string name="downstartguilogo">DownStartGUIlogo</string>
+    <string name="StartGUIlogin">conexión</string>
+    <string name="msgBack">respuesta</string>
+    <string name="callBack">recordar</string>
+    <string name="notavailable">ha sido desactivada ahora</string>
+    <string name="unfit">es médicamente aptos</string>
+    <string name="StartGUIregister">contratar</string>
+    <string name="how_to_use">cómo utilizar</string>
+    <string name="select_blood_group">el grupo de sangre requerido</string>
+    <string name="distance_range">área de búsqueda</string>
+    <string name="_0_km">0 km</string>
+    <string name="find_people_near_by">Encontrar a la persona proximidad</string>
+    <string name="singlelistitemphoto">SingleListItemPhoto</string>
+    <string name="donor_name_here">el nombre del donante</string>
+    <string name="requester_name_here">Nombre del solicitante</string>
+    <string name="donor_age_here">Edad del donante</string>
+    <string name="donor_email_here">donantes E-mail</string>
+    <string name="msgDonor">Mensaje</string>
+    <string name="callDonor">Llamada</string>
+    <string name="notifyDonor">Notificar</string>
+    <string name="verification_code">Código de verificación</string>
+    <string name="upload_image">Descargar imagen</string>
+    <string name="uploadimagecameraimage">UploadImageCameraImage</string>
+    <string name="proceed">comienzo</string>
+    <string name="howtouse">
+ \u2022 En primer lugar se registre con el botón Registro proporcionar suficientes detalles.\n
+        \n\u2022 Utilice botón Iniciar sesión para entrar en la interfaz principal de la aplicación.\n
+        \n\u2022 Seleccione el grupo sanguíneo adecuado que requiere.\n
+        \n\u2022 Seleccione el ámbito de ¿quieres Encuentra los donantes.\n
+        \n\u2022 Use el cursor remoto Para saber Si los donantes están presentes en esta zona o no.\n
+        \n\u2022 Haga clic en la búsqueda para encontrar a personas cercanas y ver detalles donantes disponibles.\n
+        \n\u2022 Usar los bottons Mensaje y la llamada Las notificaciones para contactos Un donante específico.\n
+    </string>
+</resources>

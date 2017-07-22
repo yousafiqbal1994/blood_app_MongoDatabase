@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.donateblood.blooddonation">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"></uses-permission>
+    <permission android:name="com.donateblood.blooddonation.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.donateblood.blooddonation.permission.C2D_MESSAGE" />
+
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Donate Blood"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_id"/>
+
+        <receiver android:exported="false"
+            android:name=".CheckConnectivity" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.donateblood.blooddonation" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.donateblood.blooddonation.MessageReceive" android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".StartGUI"
+            android:label="@string/donateblood"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name=".SignupActivity"
+        android:label="@string/signup"
+        android:theme="@style/AppTheme"
+        />
+        <activity
+            android:name=".MainGUI"
+            android:label="@string/mainGUI"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".ContactBack"
+            android:label="@string/ContactDonor"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".HowToUse"
+            android:label="@string/UserGuide"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".UploadImage"
+            android:label="@string/image"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".PeopleList"
+            android:label="@string/nearbyppl"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="Donate Blood" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+
+</manifest>
